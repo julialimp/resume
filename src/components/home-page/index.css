@@ -1,0 +1,14 @@
+div {
+    background-color: #0101019a;
+    height: 100vh;
+    background-image: url("../../assets/picture.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: top right;
+    background-size: contain;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ffffff
+}
