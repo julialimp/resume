@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "About me",
+            "route": "about"
+        },
+        {
+            "id": 2,
+            "title": "Experiences",
+            "route": "experiences"
+        },
+        {
+            "id": 3,
+            "title": "Curriculum",
+            "route": "cv"
+        },
+        {
+            "id": 4,
+            "title": "Portfolio",
+            "route": "portfolio"
+        },
+        {
+            "id": 5,
+            "title": "Contact",
+            "route": "contact"
+        }
+    ]
+}
