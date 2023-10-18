@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { getMenu } from "../../services/get-menu"
-import { Content, List } from '../../styles/home'
+import { Content, Items, List } from '../../styles/home'
+import { ThemeContext } from "../../contexts/theme-context"
+import { GlobalStyle } from "../../styles/global-style"
 
 
 const Menu = () => {
     const [menu, setMenu] = useState([])
+
+    const { theme } = useContext(ThemeContext)
 
     useEffect(() => {
         async function fetchData() {
@@ -14,15 +18,17 @@ const Menu = () => {
         }
         
         fetchData()
-    }, [menu])
+    }, [])
 
     return (
-        <Content>
+        <Content theme={theme}>
+            <GlobalStyle theme={theme} />
+
             <List>
                 {menu.map((info, index) =>
                     <li key={index}>
                         <Link to={`/${info.route}`}>
-                            <h2>{info.title}</h2>
+                            <Items>{info.title}</Items>
                         </Link>
                     </li>
                 )}

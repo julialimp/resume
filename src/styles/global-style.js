@@ -1,10 +1,9 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
-    color: #ffffff;
     box-sizing: border-box;
 }  
 
@@ -14,16 +13,7 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-body {
-    height: 100vh;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    color: inherit;
 }
 
 code {
@@ -33,18 +23,17 @@ code {
 
 
 #root {
-    max-height: 100%;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 }
 `
 
-export const Container = styled.div`
-  background-color: #000000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+export const BodyStyle = createGlobalStyle`
+    body {
+        /* color: black; */
+    }
 `
+
 
 // background-color:  ${(props) => props.theme.backgroundColor};

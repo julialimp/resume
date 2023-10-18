@@ -18,9 +18,9 @@ const FooterStyle = styled.footer`
     font-size: 12px;
     padding: 1px;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
-    max-height: 3vh;
+    height: 3vh;
 `
 
 export { Footer }

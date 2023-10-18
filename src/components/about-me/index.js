@@ -1,25 +1,24 @@
-import styled from "styled-components";
-// import { Container } from "../../styles/global-style";
-import { useParams } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
-import { getInfos } from "../../services/get-infos";
-import { ThemeContext } from "../../contexts/theme-context";
+import { useContext, useEffect, useState } from "react"
+import { ThemeContext } from "../../contexts/theme-context"
+import styled from "styled-components"
+import { getInfos } from "../../services/get-infos"
 
-const PersonalInfo = () => {
+
+const AboutMe = () => {
     const [info, setInfo] = useState([])
-    const { route } = useParams()
 
     const { theme } = useContext(ThemeContext)
+    console.log(theme.color)
 
     useEffect(() => {
         async function fetchData() {
-            const info = await getInfos(route)
+            const info = await getInfos('about')
             setInfo(info.data)
         }
 
         fetchData()
-    }, [route])
-
+    }, [])
+    
     return (
         <InternalPage theme={theme}>
             <div>
@@ -32,7 +31,6 @@ const PersonalInfo = () => {
         </InternalPage>
     )
 }
-
 
 const InternalPage = styled.section`
     min-height: 100vh;
@@ -70,4 +68,4 @@ const Text = styled.p`
     line-height: 25px;
 `
 
-export { PersonalInfo }
+export { AboutMe }
