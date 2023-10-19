@@ -8,7 +8,7 @@ const AboutMe = () => {
     const [info, setInfo] = useState([])
 
     const { theme } = useContext(ThemeContext)
-    console.log(theme.color)
+    // console.log(theme.color)
 
     useEffect(() => {
         async function fetchData() {

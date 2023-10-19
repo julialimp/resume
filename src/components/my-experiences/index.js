@@ -13,8 +13,9 @@ const MyExperiences = () => {
         <ExperiencesSection theme={theme}>
             <GlobalStyle theme={theme} />
 
-            <Title theme={theme}>Experiences</Title>
+            
             <TimeLineDiv>
+                <Title theme={theme}>Experiences</Title>
                 <Chrono items={items}
                     // {...theme === themes.light ? console.log("light") : console.log("dark")}
                     theme={chronoTheme}

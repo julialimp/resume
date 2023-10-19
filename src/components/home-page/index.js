@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { getMenu } from "../../services/get-menu"
-import { Content, Items, List } from '../../styles/home'
+import { Content, HomeImg, Items, List } from '../../styles/home'
 import { ThemeContext } from "../../contexts/theme-context"
 import { GlobalStyle } from "../../styles/global-style"
 
@@ -23,7 +23,6 @@ const Menu = () => {
     return (
         <Content theme={theme}>
             <GlobalStyle theme={theme} />
-
             <List>
                 {menu.map((info, index) =>
                     <li key={index}>
@@ -33,6 +32,7 @@ const Menu = () => {
                     </li>
                 )}
             </List>
+            <HomeImg />
         </Content >
     )
 }

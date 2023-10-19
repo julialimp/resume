@@ -3,7 +3,32 @@
         "id": 4,
         "title": "Portfolio",
         "route": "portfolio",
-        "image": "images/profile-picture-color.png",
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?"
+        "projects": [
+            {
+                "title": "Pokémon API",
+                "image": "../images/pokemon.JPG",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
+                "link": "https://pokemon-api-80z8.onrender.com/"
+            },
+            {
+                "title": "GitHub API",
+                "image": "../images/github.png",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
+                "link": "https://julialimp.github.io/quest-javascript-avancado/"
+            },
+            {
+                "title": "Landing Page",
+                "image": "../images/landing-page.png",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
+                "link": "https://julialimp.github.io/landing-page/"
+            },
+            {
+                "title": "Huddle Page",
+                "image": "../images/huddle.png",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
+                "link": "https://julialimp.github.io/quest-html-e-css-avancado/"
+            }
+        ]
+        
     }
 }
