@@ -4,6 +4,12 @@
         "title": "Contact",
         "route": "contact",
         "image": "images/profile-picture-color.png",
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?"
+        "whatsapp": "https://wa.me/5551996922234",
+        "phone": "tel:+5551996922234",
+        "email": "mailto:julia.limp@hotmail.com",
+        "location": "Brazil - Porto Alegre/RS",
+        "linkedin": "https://www.linkedin.com/in/julialimp",
+        "github": "https://www.github.com/julialimp",
+        "text":"Thank you for taking a time to look at my resumé! Hope you enjoyed it. If you had any interest and want to talk a little, please contact me."
     }
 }

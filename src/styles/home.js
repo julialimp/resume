@@ -4,7 +4,6 @@ import img from '../../src/assets/picture.jpg'
 export const Content = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
     background-color: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.color};
     min-height: 100vh;

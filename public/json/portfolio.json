@@ -6,7 +6,7 @@
         "projects": [
             {
                 "title": "Pokémon API",
-                "image": "../images/pokemon.JPG",
+                "image": "../images/pokemon.png",
                 "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
                 "link": "https://pokemon-api-80z8.onrender.com/"
             },

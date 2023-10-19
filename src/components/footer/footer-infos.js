@@ -3,8 +3,8 @@ import styled from "styled-components"
 const Footer = () => {
     return (
         <FooterStyle className="resume-header">
-            <p>Phone number: +55 51 9 9692-2234</p>
-            <p>Email: julia.limp@hotmail.com</p>
+            <p><a href="tel:+5551996922234">Phone number: +55 51 9 9692-2234</a></p>
+            <p><a href="mailto:julia.limp@hotmail.com">Email: julia.limp@hotmail.com</a></p>
             <p>Location: Brazil - Porto Alegre/RS</p>
         </FooterStyle>
     )
