@@ -24,9 +24,10 @@ const MyPorfolio = () => {
                         <TextItem>
                             <h3>{project.title}</h3>
                             <p>{project.text} </p>
-                            <a href={project.link} target="_blank" rel="noreferrer">See project</a>
+                            <a href={project.link} target="_blank" rel="noreferrer">Online Page</a>
+                            <a href={project.reository} target="_blank" rel="noreferrer">Repository</a>
                         </TextItem>
-                        <div style={{background: `url(${project.image}) center center no-repeat`, backgroundSize: "cover"}}/>
+                        <div style={{background: `url(${project.image}) center center no-repeat`, backgroundSize: "cover"}} />
                     </>
                 )
             })}
@@ -80,6 +81,7 @@ const TextItem = styled.div`
 
     a {
         /* font-size: 1.6rem; */
+        cursor: pointer; 
         align-self: flex-start;
     }
 

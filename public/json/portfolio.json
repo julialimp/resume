@@ -7,26 +7,30 @@
             {
                 "title": "Pokémon API",
                 "image": "../images/pokemon.png",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
-                "link": "https://pokemon-api-80z8.onrender.com/"
+                "text": "Project built with React and styled-components, using public API PokeAPI. The application shows a list of Pokémons with a button to load more. Each pokemon component is clickable and should direct to an internal page with the pokemon details, such as the name and image, the list of moves, list of abilities with their description and the type of the Pokemon."
+                ,
+                "link": "https://pokemon-api-80z8.onrender.com/",
+                "repository": "https://github.com/julialimp/pokemon-project"
             },
             {
                 "title": "GitHub API",
                 "image": "../images/github.png",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
-                "link": "https://julialimp.github.io/quest-javascript-avancado/"
+                "text": "Project built with HTML, CSS and JavaScript, using GitHub API. When typing a name and clicking the button OR pressing ENTER, github user should return with some informations, such as name, bio, followers and following, repositories and 10 most recent events. If the user is not informed or by typing an incorrect username an error message should appear.",
+                "link": "https://julialimp.github.io/quest-javascript-avancado/",
+                "repository": "https://github.com/julialimp/quest-javascript-avancado"
             },
             {
                 "title": "Landing Page",
                 "image": "../images/landing-page.png",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
-                "link": "https://julialimp.github.io/landing-page/"
+                "text": "Landing page of a model agency developed with HTML and CSS. It was used Grid and Flexbox properties to style the page.",
+                "repository": "https://github.com/julialimp/landing-page"
             },
             {
                 "title": "Huddle Page",
                 "image": "../images/huddle.png",
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore itaque alias neque ex, repellat ipsum praesentium modi, necessitatibus odio magni minus, veniam sapiente aliquid. Minima magni totam quasi dolorum?",
-                "link": "https://julialimp.github.io/quest-html-e-css-avancado/"
+                "text": "Huddle page created using HTML and CSS properties, such as Flexbox and Grid to style the application.",
+                "link": "https://julialimp.github.io/quest-html-e-css-avancado/",
+                "repository": "https://github.com/julialimp/quest-html-e-css-avancado"
             }
         ]
         
