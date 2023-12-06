@@ -2,14 +2,17 @@ import { createContext, useState } from "react"
 
 export const themes = {
     light: {
-        backgroundColor: 'grey',
-        headerColor: '#004444',
-        color: '#000000'
+        backgroundColor: '#ffffff',
+        headerColor: '#ffffff7a',
+        color: '#000000',
+        overlay: '#ffffffaa'
     },
     dark: {
         backgroundColor: '#000000',
-        headerColor: '#474f5e',
-        color: '#ffffff'
+        headerColor: '#4444447a',
+        color: '#ffffff',
+        toggler: 'flex-end',
+        overlay: '#000000aa'
     }
 }
 

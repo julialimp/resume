@@ -21,17 +21,20 @@ code {
     monospace;
 }
 
-
 #root {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
 }
+
+body {
+        /* height: 70vh; */
+    }
 `
 
 export const BodyStyle = createGlobalStyle`
     body {
-        /* color: black; */
+        /* height: 90vh; */
     }
 `
 

@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
 import styled from "styled-components"
 import { getInfos } from "../../services/get-infos"
+import bgImg from "../../assets/lamp.jpg"
 
 
 const MyPorfolio = () => {
@@ -21,13 +22,13 @@ const MyPorfolio = () => {
             {projects.map((project) => {
                 return (
                     <>
-                        <TextItem>
-                            <h3>{project.title}</h3>
-                            <p>{project.text} </p>
-                            <a href={project.link} target="_blank" rel="noreferrer">Online Page</a>
-                            <a href={project.reository} target="_blank" rel="noreferrer">Repository</a>
-                        </TextItem>
-                        <div style={{background: `url(${project.image}) center center no-repeat`, backgroundSize: "cover"}} />
+                            <TextItem>
+                                <h3>{project.title}</h3>
+                                <p>{project.text} </p>
+                                <a href={project.link} target="_blank" rel="noreferrer">Online Page</a>
+                                <a href={project.reository} target="_blank" rel="noreferrer">Repository</a>
+                            </TextItem>
+                            <div style={{ background: `url(${project.image}) center center no-repeat`, backgroundSize: "contain" }} />
                     </>
                 )
             })}
@@ -39,15 +40,17 @@ const MyPorfolio = () => {
 
 const PortfolioSection = styled.section`
     background-color: ${(props) => props.theme.backgroundColor};
-    color: ${(props) => props.theme.color};
-    padding-top: 43px;
+    /* color: ${(props) => props.theme.color}; */
+    color: black;
+    padding-top: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-auto-rows: auto;
 
+
     div {
-        /* border: dashed 2px black; */
+        width: 50vw;
     }
 
     div:nth-child(3) {
@@ -62,11 +65,13 @@ const PortfolioSection = styled.section`
 `
 
 const TextItem = styled.div`
-    padding: 20%;
+    padding: 16.3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    background: url(${bgImg}) center;
+    background-size: contain;
 
     h3 {
         /* font-weight: 700; */

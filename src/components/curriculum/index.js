@@ -13,7 +13,7 @@ const CV = () => {
         <CVSection theme={theme}>
             <Div theme={theme}>
                 <a href={pdfFIle} target="_blank" rel="noreferrer">
-                    <p>Open the document</p>
+                    <p>Open document</p>
                     <Document file={pdfFIle}>
                         <Page pageNumber={1}></Page>
                     </Document>

@@ -31,13 +31,11 @@ const ChronoTheme = () => {
 */
 
 const chronoTheme = {
-    primary: "#000000",
+    primary: "#880000",
     secondary: "#880000",
-    titleColor: "#d9eefc",
-    titleColorActive: "white",
-    cardBgColor: "#848e8e",
+    titleColorActive: "#ffffff",
+    cardBgColor: "#797a7a9a",
     cardTitleColor: "#000000",
-    nestedCardBgColor: "#797a7a"
 }
 
 export { chronoTheme }

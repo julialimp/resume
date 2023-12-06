@@ -1,11 +1,13 @@
 import styled from "styled-components"
 import img from "../../assets/picture.jpg"
+import bg from "../../assets/laptop2.jpg"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
 import { useState } from "react"
 import { useEffect } from "react"
 import { getInfos } from "../../services/get-infos"
-import { FaGithub, FaLinkedin, FaMailBulk, FaMailchimp, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaMailBulk, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
+
 
 const MyContact = () => {
     const [infos, setInfos] = useState([])
@@ -21,46 +23,66 @@ const MyContact = () => {
 
     return (
         <ContactSection theme={theme}>
-            <Img />
-            <ContactInfo>
-                <ContactList>
-                    {/* <FontAwesomeIcon icon="fa-phone fa-phone" /> */}
-                    {/* <FontAwesomeIcon icon="fa-solid fa-phone" /> */}
-                   
-                    <li><a href={infos.whatsapp} target="_blank" rel="noreferrer"> <FaWhatsapp /> Whatsapp</a></li>
-                    <li><a href={infos.phone}><FaPhoneAlt /> Phone</a></li>
-                    <li><a href={infos.email}><FaMailBulk /> Email</a></li>
-                    <li><a href={infos.linkedin} target="_blank" rel="noreferrer"><FaLinkedin /> Linkedin</a></li>
-                    <li><a href={infos.github} target="_blank" rel="noreferrer"><FaGithub /> GitHub </a></li>
-                </ContactList>
-                <p>{infos.text}</p>
-            </ContactInfo>
+            <Overlay theme={theme} />
 
+            <Container theme={theme}>
+                <Img />
+                <ContactInfo>
+                    <ContactList theme={theme}>
+                        <li><a href={infos.whatsapp} target="_blank" rel="noreferrer"> <FaWhatsapp /> Whatsapp</a></li>
+                        <li><a href={infos.phone}><FaPhoneAlt /> Phone</a></li>
+                        <li><a href={infos.email}><FaMailBulk /> Email</a></li>
+                        <li><a href={infos.linkedin} target="_blank" rel="noreferrer"><FaLinkedin /> Linkedin</a></li>
+                        <li><a href={infos.github} target="_blank" rel="noreferrer"><FaGithub /> GitHub </a></li>
+                    </ContactList>
+
+                    <strong>{infos.text}</strong>
+                </ContactInfo>
+            </Container>
         </ContactSection>
-
     )
 }
 
 const ContactSection = styled.section`
     min-height: 100vh;
+    background: url(${bg}) no-repeat right;
+    background-size: cover;
+`
+
+const Container = styled.div`
+    position: absolute;
+    width: 100%;
+    min-height: 93vh;
+    bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.color};
+    text-shadow: ${(props) => props.theme.backgroundColor} 1px 0 10px;
+`
+
+const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ${(props) => props.theme.overlay};
 `
 
 const Img = styled.div`
-    background: url(${img}) no-repeat center center;
+    background: url(${img}) no-repeat;
     background-size: contain;
+    background-position: center;
 `
 
 const ContactInfo = styled.div`
     display: flex;
     align-items: center;
-
-    p {
+    strong {
         width: 30%;
         text-align: center;
+        letter-spacing: .5px;
+        line-height: 20px;
     }
 `
 
@@ -79,11 +101,11 @@ const ContactList = styled.ul`
         padding: 10px;
     }
     li:hover {
-        background-color: white;
+        background-color: ${(props) => props.theme.color};
         border-radius: 10px;
-        color: black;
+        color: ${(props) => props.theme.backgroundColor};
         scale: 1.1;
-        transition: ease-in 0.3s;
+        transition: ease-in-out 0.4s;
     }
     svg {
         margin-right: 8px;

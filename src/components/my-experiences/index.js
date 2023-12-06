@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import bg from "../../assets/laptop1.jpg"
 import { Chrono } from "react-chrono"
 import { items } from "./data"
 import { useContext } from "react"
@@ -6,20 +7,20 @@ import { ThemeContext } from "../../contexts/theme-context"
 import { GlobalStyle } from "../../styles/global-style"
 import { chronoTheme } from "./theme"
 
+
 const MyExperiences = () => {
     const { theme } = useContext(ThemeContext)
     
     return (
         <ExperiencesSection theme={theme}>
             <GlobalStyle theme={theme} />
+            <Overlay theme={theme} />
 
             
             <TimeLineDiv>
                 <Title theme={theme}>Experiences</Title>
                 <Chrono items={items}
-                    // {...theme === themes.light ? console.log("light") : console.log("dark")}
                     theme={chronoTheme}
-                    // scrollable
 
                     cardWidth={500}
                     cardHeight={200}
@@ -28,17 +29,11 @@ const MyExperiences = () => {
                     titlePosition={"TOP"}
                     timelinePointShape={"circle"}
                     timelinePointDimension={15}
-                    // flipLayout 
 
                     fontSizes={{
                         title: "1rem",
                         cardTitle: "1.3rem"
                     }}
-                //   cardPositionHorizontal={"TOP"}
-                // enableDarkToggle
-                // useReadMore
-                // hideControls
-                // slideItemDuration={10000} slideShow
                 />
             </TimeLineDiv>
         </ExperiencesSection>
@@ -47,17 +42,21 @@ const MyExperiences = () => {
 
 
 const ExperiencesSection = styled.section`
-    background-color: ${(props) => props.theme.backgroundColor};
+    /* background-color: ${(props) => props.theme.backgroundColor}; */
     min-height: 100vh;
     /* padding: 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url(${bg}) no-repeat left fixed;
+    background-size: cover;
+
 
     .TimelineTitleContainer-sc-18iuiou-4.CZfvq {
         /* background-color: blue; */
-        background-color: ${(props) => props.theme.color};
+        /* background-color: ${(props) => props.theme.color}; */
+        color: red;
         border-radius: 8px;
         /* gap: 20px; */
         display: flex;
@@ -76,26 +75,41 @@ const ExperiencesSection = styled.section`
         flex-direction: column-reverse;
         gap: 40px;
         justify-content: flex-end;
+        color: ${(props) => props.theme.color};
         /* padding-top: 4px; */
     }
 `
-const Title = styled.h2`
+
+const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: ${(props) => props.theme.backgroundColor};
+    height: 100%;
+    background-color: ${(props) => props.theme.overlay};
+`
+
+const TimeLineDiv = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: coral; */
+    /* background-color: ${(props) => props.theme.backgroundColor}; */
+    width: 70%;
+    height: 50%;
+    padding: 20px;
+`
+
+const Title = styled.h2`
+    /* position: absolute; */
+    /* width: 70%; */
+    /* background-color: red; */
+    /* background-color: ${(props) => props.theme.backgroundColor}; */
     color: ${(props) => props.theme.color};
     text-transform: uppercase;
     text-align: center;
     margin: 30px;
 
 `
-
-const TimeLineDiv = styled.div`
-    /* background-color: coral; */
-    background-color: ${(props) => props.theme.backgroundColor};
-    width: 70%;
-    height: 50%;
-    padding: 20px;
-`
-
 
 export { MyExperiences }

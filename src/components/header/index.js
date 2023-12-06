@@ -24,7 +24,7 @@ const HeaderStyle = styled.header`
     justify-content: space-between;
     padding: 3px 50px;
     align-items: center;
-    max-height: 7vh;
+    height: 7vh;
     background-color: ${(props) => props.theme.headerColor};
     color: ${(props) => props.theme.color};
     position: fixed;
