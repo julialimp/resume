@@ -22,13 +22,15 @@ const MyPorfolio = () => {
             {projects.map((project) => {
                 return (
                     <>
-                            <TextItem>
+                        <TextItem theme={theme}>
+                            <div>
                                 <h3>{project.title}</h3>
                                 <p>{project.text} </p>
                                 <a href={project.link} target="_blank" rel="noreferrer">Online Page</a>
                                 <a href={project.reository} target="_blank" rel="noreferrer">Repository</a>
-                            </TextItem>
-                            <div style={{ background: `url(${project.image}) center center no-repeat`, backgroundSize: "contain" }} />
+                            </div>
+                        </TextItem>
+                        <div style={{ background: `url(${project.image}) center center no-repeat`, backgroundSize: "contain" }} />
                     </>
                 )
             })}
@@ -40,19 +42,14 @@ const MyPorfolio = () => {
 
 const PortfolioSection = styled.section`
     background-color: ${(props) => props.theme.backgroundColor};
-    /* color: ${(props) => props.theme.color}; */
+    color: ${(props) => props.theme.color};
     color: black;
     padding-top: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-auto-rows: auto;
-
-
-    div {
-        width: 50vw;
-    }
-
+    max-width: 1920px;
+    
     div:nth-child(3) {
         grid-column: 2;
         grid-row: 2;
@@ -62,25 +59,44 @@ const PortfolioSection = styled.section`
         grid-column: 2;
         grid-row: 4;
     }
+    
+
+    @media (max-width: 930px) {
+        display: flex;
+        flex-direction:  column;
+        align-items: center;
+
+        div {
+            width: 650px;
+            height: 430px;
+        }
+    }
+
+    @media (max-width: 678px) {
+        div {
+            width: 450px;
+            height: 300px;
+        }
+    }
 `
 
 const TextItem = styled.div`
-    padding: 16.3%;
+    padding: 55px;
+    background: url(${bgImg}) no-repeat center;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background: url(${bgImg}) center;
-    background-size: contain;
 
-    h3 {
-        /* font-weight: 700; */
-        /* font-size: 4rem; */
+    div {
+        background-color: ${(props) => props.theme.overlay};
+        color: ${(props) => props.theme.color};
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 55px;
+        border-radius: 8px;
     }
 
     p {
-        /* font-size: 1.8rem; */
-        /* font-weight: 400; */
         margin: 30px 0;
     }
 
@@ -92,6 +108,15 @@ const TextItem = styled.div`
 
     a:hover {
         font-weight: bold;
+    }
+
+    @media (max-width: 678px) {
+        padding: 50px;
+        
+        div {
+            width: 450px;
+            height: 300px;
+        }
     }
 `
 

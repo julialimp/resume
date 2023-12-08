@@ -41,10 +41,14 @@ const AboutSection = styled.section`
     min-height: 100vh;
     background: url(${bg}) right no-repeat;
     background-size: cover;
+
+    @media (max-width: 930px) {
+        /* overflow: auto; */
+    }
 `
 
 const Container = styled.div`
-    position: absolute;
+    position: relative;
     min-height: 100vh;
     /* background-color: ${(props) => props.theme.backgroundColor}; */
     
@@ -52,6 +56,14 @@ const Container = styled.div`
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 930px) {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 50px 0;
+        height: 100%;
+    }
 `
 
 const Overlay = styled.div`
@@ -65,11 +77,16 @@ const Overlay = styled.div`
 
 const Img = styled.img`
     width: 30vw;
-    border-radius: 15%;
+    border-radius: 15px;
     margin: 50px;
     box-shadow: 2px 2px 50px #444455;
     background: url(${profileBg}) no-repeat;
     background-size: cover;
+
+    @media (max-width: 678px) {
+        width: 30vw;
+        margin: 20px;
+    }
 `
 
 const InfoDiv = styled.div`
@@ -84,11 +101,17 @@ const InfoDiv = styled.div`
     background-color: ${(props) => props.theme.headerColor};
     color: ${(props) => props.theme.color};
     text-shadow: 3px 3px 40px;
+
+    @media (max-width: 678px) {
+        width: 90vw;
+        padding: 30px;
+    }
 `
 
 const Title = styled.h2`
     padding-bottom: 20px;
     text-align: center;
+
 `
 
 const Text = styled.p`

@@ -15,15 +15,19 @@ const MyExperiences = () => {
         <ExperiencesSection theme={theme}>
             <GlobalStyle theme={theme} />
             <Overlay theme={theme} />
-
             
             <TimeLineDiv>
                 <Title theme={theme}>Experiences</Title>
                 <Chrono items={items}
                     theme={chronoTheme}
+                    className="custom-timeline"
+                    mode="VERTICAL_ALTERNATING"
+                    // slideShow
+                    // slideItemDuration={5000}
 
                     cardWidth={500}
                     cardHeight={200}
+                    
                     itemWidth={310}
                     nestedCardHeight={150}
                     titlePosition={"TOP"}
@@ -33,6 +37,12 @@ const MyExperiences = () => {
                     fontSizes={{
                         title: "1rem",
                         cardTitle: "1.3rem"
+                    }}
+
+                    classNames={{
+                        card: "my-card",
+                        title: "my-title",
+                        cardTitle: "my-card-title"
                     }}
                 />
             </TimeLineDiv>
@@ -52,21 +62,18 @@ const ExperiencesSection = styled.section`
     background: url(${bg}) no-repeat left fixed;
     background-size: cover;
 
-
-    .TimelineTitleContainer-sc-18iuiou-4.CZfvq {
-        /* background-color: blue; */
-        /* background-color: ${(props) => props.theme.color}; */
-        color: red;
-        border-radius: 8px;
-        /* gap: 20px; */
-        display: flex;
-        flex-direction: column;
+    .my-card {
+        border-radius: 10px;
     }
 
-    ul {
-        /* background-color: white; */
-        /* height: 100px; */
-        /* margin-top: 20px; */
+    .my-title {
+        color: ${(props) => props.theme.backgroundColor};
+        background-color: ${(props) => props.theme.color};
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
     }
 
     li div {
@@ -76,7 +83,43 @@ const ExperiencesSection = styled.section`
         gap: 40px;
         justify-content: flex-end;
         color: ${(props) => props.theme.color};
-        /* padding-top: 4px; */
+    }
+
+    .my-card-title {
+        /* text-decoration: underline; */
+        &:hover {
+            scale: 1.02;
+            transition: .3s;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+        
+        .custom-timeline {
+            width: 100vw;
+        }
+
+        .my-title {
+            padding: 5px;
+            font-size: .8em;
+        }
+
+        .my-card {
+           width: 100%;
+           font-size: .9em;
+           line-height: 20px;
+           
+        }
+
+        .my-card-title {
+            font-size: 1em;
+        }
+
+        .timeline-card-content {
+            /* background-color: coral; */
+        }
+
     }
 `
 
@@ -89,6 +132,22 @@ const Overlay = styled.div`
     background-color: ${(props) => props.theme.overlay};
 `
 
+const Title = styled.h2`
+    /* position: absolute; */
+    /* width: 70%; */
+    /* background-color: red; */
+    /* background-color: ${(props) => props.theme.backgroundColor}; */
+    color: ${(props) => props.theme.color};
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 50px;
+
+    @media (max-width: 768px) {
+        margin-top: 80px;
+    }
+`
+
 const TimeLineDiv = styled.div`
     position: relative;
     display: flex;
@@ -98,18 +157,10 @@ const TimeLineDiv = styled.div`
     width: 70%;
     height: 50%;
     padding: 20px;
-`
 
-const Title = styled.h2`
-    /* position: absolute; */
-    /* width: 70%; */
-    /* background-color: red; */
-    /* background-color: ${(props) => props.theme.backgroundColor}; */
-    color: ${(props) => props.theme.color};
-    text-transform: uppercase;
-    text-align: center;
-    margin: 30px;
-
+    @media (max-width: 768px) {
+        width: 100vw;
+    }
 `
 
 export { MyExperiences }

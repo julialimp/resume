@@ -28,8 +28,8 @@ code {
 }
 
 body {
-        /* height: 70vh; */
-    }
+    
+}
 `
 
 export const BodyStyle = createGlobalStyle`

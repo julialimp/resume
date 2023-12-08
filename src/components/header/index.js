@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { ThemeTogglerButton } from "../theme-toggler"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
+import { FaHome } from "react-icons/fa"
 
 const Header = () => {
     const { theme } = useContext(ThemeContext)
@@ -11,7 +12,7 @@ const Header = () => {
     return (
         <HeaderStyle className="resume-header" theme={theme}>
             <NavLink to="/">
-                Home
+                <FaHome />
             </NavLink>
             <h1>Julia Limp de Almeida</h1>
             <ThemeTogglerButton />
@@ -30,16 +31,26 @@ const HeaderStyle = styled.header`
     position: fixed;
     width: 100vw;
     z-index: 1;
-`
+    text-align: center;
 
-const NavLink = styled(Link)`
-    
-    color: ${(props) => props.theme.color};
-    &:hover {
-        scale: 1.08;
-        transition: ease-in-out .3s;
+    @media (max-width: 768px) {
+        font-size: .7em;
     }
 `
 
+const NavLink = styled(Link)`
+    color: ${(props) => props.theme.color};
+    font-size: 2rem;
+    padding: 2px;
+    display: flex;
+    &:hover {
+        scale: 1.1;
+        transition: ease-in-out .3s;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+`
 
 export { Header }

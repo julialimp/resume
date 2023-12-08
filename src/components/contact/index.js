@@ -58,6 +58,10 @@ const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     color: ${(props) => props.theme.color};
     text-shadow: ${(props) => props.theme.backgroundColor} 1px 0 10px;
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
 `
 
 const Overlay = styled.div`
@@ -73,6 +77,10 @@ const Img = styled.div`
     background: url(${img}) no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 const ContactInfo = styled.div`
@@ -83,6 +91,21 @@ const ContactInfo = styled.div`
         text-align: center;
         letter-spacing: .5px;
         line-height: 20px;
+    }
+
+    @media (max-width: 930px) {
+        scale: .8;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        strong {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 30px 80px;
+        scale: 1;
     }
 `
 
@@ -110,7 +133,18 @@ const ContactList = styled.ul`
     svg {
         margin-right: 8px;
     }
-`
 
+    @media (max-width: 930px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+        li {
+            align-self: center;
+            width: 150px;
+            font-size: 16px;
+        }
+    }
+`
 
 export { MyContact }

@@ -25,6 +25,10 @@ const Button = styled.button`
         scale: 1.08;
         transition: ease-in-out .3s;
     }
+
+    @media (max-width: 768px) {
+        font-size: .75rem;
+    }
 `
 
 export { ButtonChangeTheme }

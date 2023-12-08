@@ -13,7 +13,12 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: ${(props) => props.theme.color};
-    
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 `
 
 export const Overlay = styled.div`
@@ -31,6 +36,10 @@ export const List = styled.ul`
     align-items: center;
     text-transform: uppercase;
     justify-content: center;
+
+    @media(max-width: 375px) {
+        scale: .8;
+    }
 `
 
 export const Items = styled.h2`
@@ -48,6 +57,11 @@ export const HomeImg = styled.div`
     background: url(${img}) no-repeat;
     background-size: contain;
     background-position: center;
+    
+    @media (max-width: 768px) {
+        flex: 0.8;
+        margin-bottom: 10px;
+    }
 `
 
 export const Video = styled.video`

@@ -13,6 +13,7 @@ const Footer = () => {
 const FooterStyle = styled.footer`
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #0101015a;
     color: #ffffff;
     font-size: 12px;
@@ -21,6 +22,15 @@ const FooterStyle = styled.footer`
     width: 100vw;
     bottom: 0;
     height: 3vh;
+
+    @media(max-width: 768px) {
+        font-size: .5em;
+    }
+
+    @media(max-width: 375px) {
+        flex-direction: column;
+        height: 8vh;
+    }
 `
 
 export { Footer }

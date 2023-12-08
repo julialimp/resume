@@ -4,7 +4,12 @@ const items = [
         cardTitle: "Poza Cafe",
         url: "https://instagram.com/pozacafe/",
         cardSubtitle: "September 2019 - September 2023",
-        cardDetailedText: "I worked at Cafe Republica for one year (from 2018 to 2019) as a barista and serving clientes. I fell in love with Specialty coffee and decided to open my own café. There I did a little bit of everythin, focusing on the customer experience. Dealing with clients was something I liked and I was already used to from my previous experiences. I could improve a lot of other skills I already had, such as organization, management, finances, problem-solving, etc. I had to deal with a lot of different situations and had daily contact with clients and suppliers. I could grow a lot, both personally and professionally, with this huge experience, but the time came where I realized this cycle had come to an end and change careers.",
+        items: [
+            {
+                cardTitle: "Co-owner",
+                cardDetailedText: "I worked at a cafe for one year (from 2018 to 2019) as a barista and serving clientes. I fell in love with Specialty coffee and decided to open my own café. There I did a little bit of everything, focusing on the customer experience. Dealing with clients was something I liked and I was already used to from my previous experiences. I could improve a lot of other skills I already had, such as organization, management, finances, problem-solving, etc. I had to deal with a lot of different situations and had daily contact with clients and suppliers. I could grow a lot, both personally and professionally, with this huge experience, but the time came where I realized this cycle had come to an end and change careers.",
+            }
+        ]
     },
     {
         title: "2013-2018",
