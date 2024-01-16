@@ -52,9 +52,7 @@ const MyExperiences = () => {
 
 
 const ExperiencesSection = styled.section`
-    /* background-color: ${(props) => props.theme.backgroundColor}; */
     min-height: 100vh;
-    /* padding: 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +62,10 @@ const ExperiencesSection = styled.section`
 
     .my-card {
         border-radius: 10px;
+    }
+
+    .eAWuEf {
+        background-color: ${(props) => props.theme.hoverColor};
     }
 
     .my-title {
@@ -87,11 +89,16 @@ const ExperiencesSection = styled.section`
 
     .my-card-title {
         /* text-decoration: underline; */
+        font-weight: 500;
         &:hover {
             scale: 1.02;
             transition: .3s;
         }
     }
+    .card-sub-title {
+        font-weight: 500;
+    }
+
 
     @media (max-width: 768px) {
         margin-bottom: 20px;
@@ -109,6 +116,7 @@ const ExperiencesSection = styled.section`
            width: 100%;
            font-size: .9em;
            line-height: 20px;
+           
            
         }
 

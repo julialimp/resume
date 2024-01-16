@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
 import styled from "styled-components"
 import { getInfos } from "../../services/get-infos"
-import bg from "../../assets/bg-test.jpg"
+import bg from "../../assets/bg-about-page.jpg"
 import profileBg from "../../assets/lgbt.jpg"
 
 
@@ -98,7 +98,8 @@ const InfoDiv = styled.div`
     width: 50vw;
     padding: 30px 50px;
     border-radius: 10px;
-    background-color: ${(props) => props.theme.headerColor};
+    background-color: ${(props) => props.theme.backgroundColor};
+    border: 1px solid;
     color: ${(props) => props.theme.color};
     text-shadow: 3px 3px 40px;
 

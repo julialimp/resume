@@ -84,9 +84,12 @@ const Img = styled.div`
 `
 
 const ContactInfo = styled.div`
+    /* background-color:coral; */
     display: flex;
     align-items: center;
+
     strong {
+        /* background-color: blue; */
         width: 30%;
         text-align: center;
         letter-spacing: .5px;
@@ -111,22 +114,21 @@ const ContactInfo = styled.div`
 
 const ContactList = styled.ul`
     /* background-color: red; */
-    text-transform: uppercase;
-    font-size: 20px;
+    text-transform: initial;
+    font-size: 18px;
     font-weight: bold;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
 
     li {
         align-self: flex-start;
         padding: 10px;
     }
     li:hover {
-        background-color: ${(props) => props.theme.color};
+        background-color: ${(props) => props.theme.hoverColor};
         border-radius: 10px;
-        color: ${(props) => props.theme.backgroundColor};
         scale: 1.1;
         transition: ease-in-out 0.4s;
     }
