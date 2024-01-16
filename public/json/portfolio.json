@@ -23,6 +23,7 @@
                 "title": "Landing Page",
                 "image": "../images/landing-page.png",
                 "text": "Landing page of a model agency developed with HTML and CSS. It was used Grid and Flexbox properties to style the page.",
+                "link": "https://julialimp.github.io/landing-page/",
                 "repository": "https://github.com/julialimp/landing-page"
             },
             {

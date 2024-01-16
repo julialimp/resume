@@ -81,7 +81,7 @@ export const Items = styled.h2`
     font-size: 20px;
 
     &:hover {
-        background-color: ${(props) => props.theme.backgroundColor};
+        background-color: ${(props) => props.theme.hoverColor};
         border-radius: 10px;
         scale: 1.1;
         transition: ease-in 0.3s;

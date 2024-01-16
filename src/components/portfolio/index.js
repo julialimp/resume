@@ -27,10 +27,10 @@ const MyPorfolio = () => {
                                 <h3>{project.title}</h3>
                                 <p>{project.text} </p>
                                 <a href={project.link} target="_blank" rel="noreferrer">Online Page</a>
-                                <a href={project.reository} target="_blank" rel="noreferrer">Repository</a>
+                                <a href={project.repository} target="_blank" rel="noreferrer">Repository</a>
                             </div>
                         </TextItem>
-                        <div style={{ background: `url(${project.image}) center center no-repeat`, backgroundSize: "contain" }} />
+                        <div style={{ background: `url(${project.image}) center center no-repeat`, backgroundSize: "cover" }} />
                     </>
                 )
             })}
@@ -81,9 +81,10 @@ const PortfolioSection = styled.section`
 `
 
 const TextItem = styled.div`
-    padding: 55px;
-    background: url(${bgImg}) no-repeat center;
-    background-size: cover;
+    /* padding: 30px; */
+    max-height: 435px;
+    /* background: url(${bgImg}) no-repeat center; */
+    /* background-size: cover; */
     display: flex;
 
     div {
@@ -92,22 +93,32 @@ const TextItem = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 55px;
-        border-radius: 8px;
+        padding: 78px;
+        font-size: 14px;
+        
+        /* border-radius: 8px; */
     }
 
-    p {
+    div h3 {
+        font-weight: 700;
+    }
+
+    div p {
         margin: 30px 0;
+        line-height: 26px;
+        text-align: justify;
     }
 
-    a {
+    div a {
         /* font-size: 1.6rem; */
         cursor: pointer; 
         align-self: flex-start;
     }
 
-    a:hover {
-        font-weight: bold;
+    div a:hover {
+        font-weight: 700;
+        scale: 1.1;
+        transition: ease-in-out .3s;
     }
 
     @media (max-width: 678px) {
