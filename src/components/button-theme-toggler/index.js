@@ -20,6 +20,7 @@ const Button = styled.button`
     cursor: pointer;
     line-height: 17px;
     justify-content: ${(props) => props.theme.toggler};
+    color: #222f28;
     
     &:hover {
         scale: 1.08;

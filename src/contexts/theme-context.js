@@ -2,17 +2,17 @@ import { createContext, useState } from "react"
 
 export const themes = {
     light: {
-        backgroundColor: '#ffffff',
-        headerColor: '#ffffff7a',
-        color: '#000000',
-        overlay: '#ffffffaa'
+        backgroundColor: '#7a8474aa',
+        headerColor: 'none',
+        color: '#222f28',
+        overlay: 'radial-gradient(circle, #cec9bcaa 15%, #cec9bcaa 40%, #cec9bc 90%);'
     },
     dark: {
-        backgroundColor: '#000000',
-        headerColor: '#4444447a',
-        color: '#ffffff',
+        backgroundColor: '#7a8474aa',
+        headerColor: 'none',
+        color: '#cec9bc',
         toggler: 'flex-end',
-        overlay: '#000000aa'
+        overlay: 'radial-gradient(circle, #222f28aa 15%, #222f28aa 40%, #222f28 80%);'
     }
 }
 

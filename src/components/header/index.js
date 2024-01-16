@@ -14,7 +14,6 @@ const Header = () => {
             <NavLink to="/">
                 <FaHome />
             </NavLink>
-            <h1>Julia Limp de Almeida</h1>
             <ThemeTogglerButton />
         </HeaderStyle>
     )

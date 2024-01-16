@@ -24,7 +24,7 @@ const AppRoutes = () => {
                 <Route exact path="/portfolio" element={ <Portfolio /> } />
                 <Route exact path="/contact" element={ <Contact /> } />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </BrowserRouter>
     )
 }

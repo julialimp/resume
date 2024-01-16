@@ -1,5 +1,7 @@
-import styled from "styled-components"
 
+// import styled from "styled-components"
+
+/*
 const Footer = () => {
     return (
         <FooterStyle className="resume-header">
@@ -9,12 +11,13 @@ const Footer = () => {
         </FooterStyle>
     )
 }
+*/
 
+/*
 const FooterStyle = styled.footer`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0101015a;
     color: #ffffff;
     font-size: 12px;
     padding: 1px;
@@ -32,5 +35,5 @@ const FooterStyle = styled.footer`
         height: 8vh;
     }
 `
-
-export { Footer }
+*/
+// export { Footer }
