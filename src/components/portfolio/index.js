@@ -2,7 +2,6 @@ import { useContext, useState, useEffect } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
 import styled from "styled-components"
 import { getInfos } from "../../services/get-infos"
-import bgImg from "../../assets/lamp.jpg"
 
 
 const MyPorfolio = () => {
@@ -81,10 +80,7 @@ const PortfolioSection = styled.section`
 `
 
 const TextItem = styled.div`
-    /* padding: 30px; */
     max-height: 435px;
-    /* background: url(${bgImg}) no-repeat center; */
-    /* background-size: cover; */
     display: flex;
 
     div {
