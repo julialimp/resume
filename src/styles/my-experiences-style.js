@@ -14,10 +14,6 @@ export const ExperiencesSection = styled.section`
         border-radius: 10px;
     }
 
-    .eAWuEf {
-        background-color: ${(props) => props.theme.hoverColor};
-    }
-
     .my-title {
         color: ${(props) => props.theme.backgroundColor};
         background-color: ${(props) => props.theme.color};
