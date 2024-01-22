@@ -3,7 +3,6 @@ import { ThemeContext, themes } from "../../contexts/theme-context"
 import { ButtonChangeTheme } from "../button-theme-toggler"
 import { FaSun, FaMoon } from "react-icons/fa"
 
-
 export const ThemeTogglerButton = () => {
     const { theme, setTheme } = useContext(ThemeContext)
 

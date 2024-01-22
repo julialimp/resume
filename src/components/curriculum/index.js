@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import { Document, Page, pdfjs } from "react-pdf"
 import pdfFIle from "../../assets/cv-web-developer.pdf"
-import styled from "styled-components"
 import { ThemeContext } from "../../contexts/theme-context"
+import { CVSection, Div } from "../../styles/cv-style"
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
 
@@ -23,27 +23,5 @@ const CV = () => {
 
     )
 }
-
-const CVSection = styled.section`
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: ${(props) => props.theme.backgroundColor};
-`
-
-const Div = styled.div`
-    width: 700px;
-    max-height: 80vh;
-    margin: 50px;
-
-p {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 4px;
-    padding: 15px;
-    color: ${(props) => props.theme.color};
-}
-`
 
 export { CV }
