@@ -34,12 +34,10 @@ export const Img = styled.div`
 `
 
 export const ContactInfo = styled.div`
-    /* background-color:coral; */
     display: flex;
     align-items: center;
 
     strong {
-        /* background-color: blue; */
         width: 30%;
         text-align: center;
         letter-spacing: .5px;
@@ -63,7 +61,6 @@ export const ContactInfo = styled.div`
 `
 
 export const ContactList = styled.ul`
-    /* background-color: red; */
     text-transform: initial;
     font-size: 18px;
     font-weight: bold;
