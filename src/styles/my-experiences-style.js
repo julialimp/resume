@@ -65,6 +65,10 @@ export const ExperiencesSection = styled.section`
         .my-card-title {
             font-size: 1em;
         }
+
+        .timeline-card-content {
+            /* background-color: coral; */
+        }
     }
 `
 

@@ -121,6 +121,7 @@ export const HomeImg = styled.img`
 
     @media (max-width: 768px) {
        height: 100%;
+
     }
 `
 

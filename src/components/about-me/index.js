@@ -4,6 +4,8 @@ import { getInfos } from "../../services/get-infos"
 import { AboutSection, Container, InfoDiv, Title, Text, Img } from "../../styles/about-me-style"
 import { Overlay } from "../../styles/global-style"
 
+
+
 const AboutMe = () => {
     const [info, setInfo] = useState([])
 
@@ -27,7 +29,7 @@ const AboutMe = () => {
                 </div>
                 <InfoDiv theme={theme}>
                     <Title>{info.title}</Title>
-                    <Text>{info.text}</Text>                    
+                    <Text>{info.text}</Text>
                 </InfoDiv>
             </Container>
         </AboutSection>

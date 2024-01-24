@@ -51,6 +51,8 @@ export const TextItem = styled.div`
         justify-content: center;
         padding: 78px;
         font-size: 14px;
+        
+        /* border-radius: 8px; */
     }
 
     div h3 {
@@ -64,6 +66,7 @@ export const TextItem = styled.div`
     }
 
     div a {
+        /* font-size: 1.6rem; */
         cursor: pointer; 
         align-self: flex-start;
     }
