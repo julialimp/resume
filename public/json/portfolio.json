@@ -7,8 +7,7 @@
             {
                 "title": "Pokémon API",
                 "image": "../images/pokemon.png",
-                "text": "Project built with React and styled-components, using public API PokeAPI. The application shows a list of Pokémons with a button to load more. Each pokemon component is clickable and should direct to an internal page with the pokemon details, such as the name and image, the list of moves, list of abilities with their description and the type of the Pokemon."
-                ,
+                "text": "Project built with React.js and styled-components, using public API PokeAPI. The application shows a list of Pokémons with a button to load more. Each pokemon component is clickable and should direct to an internal page with the pokemon details, such as the name and image, the list of moves, list of abilities with their description and the type of the Pokemon.",
                 "link": "https://pokemon-api-80z8.onrender.com/",
                 "repository": "https://github.com/julialimp/pokemon-project"
             },
@@ -22,7 +21,7 @@
             {
                 "title": "Landing Page",
                 "image": "../images/landing-page.png",
-                "text": "Landing page of a model agency developed with HTML and CSS. It was used Grid and Flexbox properties to style the page.",
+                "text": "Landing page of a model agency developed with HTML and CSS. It was used CSS Grid and Flexbox properties to style the page.",
                 "link": "https://julialimp.github.io/landing-page/",
                 "repository": "https://github.com/julialimp/landing-page"
             },
@@ -34,6 +33,5 @@
                 "repository": "https://github.com/julialimp/quest-html-e-css-avancado"
             }
         ]
-        
     }
 }
