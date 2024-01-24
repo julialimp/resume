@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Personal project - Resume
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned-and-difficulties)
+  - [Continue developing](#continue-developing)
+  - [Run Project in your computer](#how-you-can-run-the-project-in-your-computer)
+- [Author](#author)
 
-### `npm start`
+## Overview
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The purpose of this website is to demonstrate my programming skills and develop an application with React from scratch. I wrote json files to use aftwerwards to get information from those files to render on the webpage. There's a menu on the Home page where each item redirects to an internal page, using react router.
+Clicking on the "Home" icon on the header, it should go back to home page, and you should be able to change theme from light to dark and vice versa by clickin on the moon/sun.
+In the Curriculum route, you should click to open the PDF to see the resume file.
+In the contact page, each icon/item has an action, either calling, opening whatsapp, email, etc.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
+#### Home Page
 
-### `npm run build`
+<a href="#" target="_blank">
+  <img src="./src/images/home-page.JPG">
+</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Solution URL: [Solution URL - Repository](https://github.com/julialimp/resume)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
+- React.js: used to build the user interface and create components, avoiding repeating too much code and keeping the code cleaner;
+- It was used a Single Page Application (SPA) for this project, this way it doesn’t have to refresh the page, leading to a faster response;
+- Context API was used to create the style of the light and dark theme. This way it was easier to pass the style properties to each one of the components that should change on the click;
+- I used styled-components library instead of CSS to be able to do it in a dynamic way, being able to write jsx code inside the styling properties;
+- React-router-dom was used to direct the links of the SPA, switching from the home page to the internal page and vice-versa.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+It was challenging to create the whole project from scratch by my self, but I really liked the results. 
+Each project I build I end up learning new things, in this case was the use of React Chrono to build a timeline for my work experiences.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Continue developing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+There are probably better and easier ways of making the project work the way I wanted, and I will continue studying and researching about possibilities to keep improving my abilities and my problem solving skill, and will try my best to always keep the code as clean as possible.
 
-### Code Splitting
+## How you can run the project in your computer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Make sure you have Node.js installed in your computer;
+2. [Download the project](https://github.com/julialimp/resume) using `git clone`.
+3. Open the terminal and go to directory `cd resume`;
+4. Execute `npm install` to install all dependencies;
+5. `npm start` runs the app in the development mode;
+6. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Analyzing the Bundle Size
+*Make sure PokeAPI is accessible so that the application can obtain the data properly.*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Linkedin - [Juia Limp](https://www.linkedin.com/in/julia-limp/)
+- Instagram - [@julialimp](https://www.instagram.com/julialimp)
+- GitHub - [@julialimp](https://github.com/julialimp)
