@@ -20,7 +20,6 @@ export const PortfolioSection = styled.section`
         grid-row: 4;
     }
     
-
     @media (max-width: 930px) {
         display: flex;
         flex-direction:  column;

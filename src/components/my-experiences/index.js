@@ -2,9 +2,9 @@ import { Chrono } from "react-chrono"
 import { items } from "./data"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
-import { GlobalStyle } from "../../styles/global-style"
+import { GlobalStyle, Overlay } from "../../styles/global-style"
 import { chronoTheme } from "./theme"
-import { ExperiencesSection, Overlay, TimeLineDiv, Title } from "../../styles/my-experiences-style"
+import { ExperiencesSection, TimeLineDiv, Title } from "../../styles/my-experiences-style"
 
 
 const MyExperiences = () => {

@@ -23,15 +23,6 @@ export const Container = styled.div`
     }
 `
 
-export const Overlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ${(props) => props.theme.overlay};
-`
-
 export const Img = styled.div`
     background: url(${img}) no-repeat;
     background-size: contain;

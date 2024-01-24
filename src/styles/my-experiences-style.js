@@ -72,15 +72,6 @@ export const ExperiencesSection = styled.section`
     }
 `
 
-export const Overlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ${(props) => props.theme.overlay};
-`
-
 export const Title = styled.h2`
     color: ${(props) => props.theme.color};
     text-transform: uppercase;

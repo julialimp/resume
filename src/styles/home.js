@@ -1,43 +1,41 @@
 import styled from "styled-components"
-// import img from '../../src/assets/picture.jpg'
-import img from '../../src/assets/profile-picture.png'
 
 export const Main = styled.div`
-    max-height: 100vh;
+    height: 100%;
 `
 
 export const Content = styled.div`
     position: absolute;
     width: 100%;
-    height: 93vh;
+    min-height: 100vh;
     bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: ${(props) => props.theme.color};
+    
 
     @media (max-width: 768px) {
-        /* display: flex; */
-        /* flex-direction: column-reverse; */
-        /* justify-content: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
     }
-`
-
-export const Overlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ${(props) => props.theme.overlay};
 `
 export const Title = styled.div`
     display: flex;
     flex-direction: column;
-    /* background-color: coral; */
     justify-content: center;
     color: ${(props) => props.theme.color};
     font-size: 80px;
     line-height: 100px;
+
+    @media (max-width: 950px) {
+        scale: 0.8;
+    }
+    @media (max-width: 768px) {
+        width: 70vw;
+        scale: 0.6;
+    }
 `
 
 export const Name = styled.h2`
@@ -45,19 +43,24 @@ export const Name = styled.h2`
 `
 
 export const Lastname = styled.h2`
-    /* position: absolute; */
     align-self: end;
 `
 
 export const Subtitle = styled.p`
     font-weight: 300;
     font-size: 15px;
-    /* background-color: coral; */
     align-self: center;
     letter-spacing: 3.5px;
     line-height: 20px;
     width: 250px;
     text-align: right;
+
+    @media (max-width: 1200px) {
+        text-align: left;
+    }
+    @media screen and (min-width: 768px) and (max-width: 950px) {
+        width: 100%;
+    }
 `
 
 export const List = styled.ul`
@@ -67,8 +70,8 @@ export const List = styled.ul`
     text-transform: initial;
     justify-content: center;
 
-    @media(max-width: 375px) {
-        scale: .8;
+    @media (max-width: 768px) {
+        scale: 0.8;
     }
 `
 
@@ -86,16 +89,39 @@ export const Items = styled.h2`
         scale: 1.1;
         transition: ease-in 0.3s;
     }
+
+    @media (max-width: 990px) {
+        margin: 0;
+    }
 `
 
-export const HomeImg = styled.div`
-    background: url(${img}) no-repeat;
-    background-size: contain;
-    background-position: left;
-    
+export const DivImg = styled.div`
+    display: flex;
+    position: relative;
+
+    @media (max-width: 1200px) {
+        align-items: center;
+        justify-content: center;
+    }
+
     @media (max-width: 768px) {
-        /* flex: 0.8; */
-        /* margin-bottom: 10px; */
+        width: 25vw;
+    }
+`
+
+export const HomeImg = styled.img`
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    @media (max-width: 1200px) {
+        position: relative;
+        bottom: auto;
+    }
+
+    @media (max-width: 768px) {
+       height: 100%;
+
     }
 `
 

@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../../contexts/theme-context"
 import { getInfos } from "../../services/get-infos"
-import { AboutSection, Overlay, Container, InfoDiv, Title, Text, Img } from "../../styles/about-me-style"
+import { AboutSection, Container, InfoDiv, Title, Text, Img } from "../../styles/about-me-style"
+import { Overlay } from "../../styles/global-style"
 
 
 
@@ -9,7 +10,6 @@ const AboutMe = () => {
     const [info, setInfo] = useState([])
 
     const { theme } = useContext(ThemeContext)
-    // console.log(theme.color)
 
     useEffect(() => {
         async function fetchData() {

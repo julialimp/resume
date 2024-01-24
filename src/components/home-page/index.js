@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { getMenu } from "../../services/get-menu"
-import { Content, HomeImg, Items, Lastname, List, Main, Name, Overlay, Subtitle, Title, Video } from '../../styles/home'
+import { Content, DivImg, HomeImg, Items, Lastname, List, Main, Name, Subtitle, Title, Video } from '../../styles/home'
 import { ThemeContext } from "../../contexts/theme-context"
-import { GlobalStyle } from "../../styles/global-style"
+import { GlobalStyle, Overlay } from "../../styles/global-style"
 import videoBg from '../../assets/programming.mp4'
+import img from '../../assets/profile-picture.png'
 
 
 const Menu = () => {
@@ -33,7 +34,11 @@ const Menu = () => {
                     <Lastname>Limp.</Lastname>
                     <Subtitle>Software Developer</Subtitle>
                 </Title>
-                <HomeImg />
+                
+                <DivImg>
+                    <HomeImg src={img}/>
+                </DivImg>
+            
                 <List >
                     {menu.map((info, index) =>
                         <li key={index}>

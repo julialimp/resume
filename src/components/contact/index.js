@@ -4,7 +4,8 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { getInfos } from "../../services/get-infos"
 import { FaGithub, FaLinkedin, FaMailBulk, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
-import { ContactSection, Container, Img, Overlay, ContactInfo, ContactList } from "../../styles/contact-style"
+import { ContactSection, Container, Img, ContactInfo, ContactList } from "../../styles/contact-style"
+import { Overlay } from "../../styles/global-style"
 
 
 const MyContact = () => {

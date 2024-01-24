@@ -1,5 +1,4 @@
 import styled from "styled-components"
-// import bg from "../../assets/bg-about-page.jpg"
 import bg from "../assets/bg-about-page.jpg"
 import profileBg from "../assets/lgbt.jpg"
 
@@ -7,17 +6,12 @@ export const AboutSection = styled.section`
     min-height: 100vh;
     background: url(${bg}) right no-repeat;
     background-size: cover;
-
-    @media (max-width: 930px) {
-        /* overflow: auto; */
-    }
 `
 
 export const Container = styled.div`
     position: relative;
     min-height: 100vh;
-    /* background-color: ${(props) => props.theme.backgroundColor}; */
-    
+  
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -30,15 +24,6 @@ export const Container = styled.div`
         padding: 50px 0;
         height: 100%;
     }
-`
-
-export const Overlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ${(props) => props.theme.overlay};
 `
 
 export const Img = styled.img`

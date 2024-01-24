@@ -5,6 +5,7 @@ export const CVSection = styled.section`
     display: flex;
     justify-content: center;
     background-color: ${(props) => props.theme.backgroundColor};
+    overflow: hidden;
 `
 
 export const Div = styled.div`
