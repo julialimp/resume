@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { getMenu } from "../../services/get-menu"
-import { Content, DivImg, HomeImg, Items, Lastname, List, Main, Name, Subtitle, Title, Video } from '../../styles/home'
+import { Content, DivImg, HomeImg, Items, Lastname, List, Main, Name, Subtitle, Title, Video } from '../../styles/home-style'
 import { ThemeContext } from "../../contexts/theme-context"
 import { GlobalStyle, Overlay } from "../../styles/global-style"
 import videoBg from '../../assets/programming.mp4'
