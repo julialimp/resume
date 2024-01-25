@@ -38,6 +38,13 @@ export const PortfolioSection = styled.section`
             height: 300px;
         }
     }
+
+    @media (max-width: 480px) {
+        div {
+            width: 400px;
+            height: 250px;
+        }
+    }
 `
 
 export const TextItem = styled.div`
@@ -76,13 +83,8 @@ export const TextItem = styled.div`
         transition: ease-in-out .3s;
     }
 
-    @media (max-width: 678px) {
-        margin-top: 60px;
-        
-        div {
-            width: 450px;
-            height: 300px;
-        }
+    @media (max-width: 480px) {
+        scale: .8;
     }
 
     @media (min-width: 1400px) {
