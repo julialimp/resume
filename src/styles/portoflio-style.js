@@ -26,8 +26,9 @@ export const PortfolioSection = styled.section`
         align-items: center;
 
         div {
-            width: 650px;
-            height: 430px;
+            width: 90vw;
+            height: 70vh;
+            margin: 0;
         }
     }
 
@@ -42,6 +43,7 @@ export const PortfolioSection = styled.section`
 export const TextItem = styled.div`
     max-height: 435px;
     display: flex;
+    margin: 78px;
 
     div {
         background-color: ${(props) => props.theme.overlay};
@@ -49,10 +51,8 @@ export const TextItem = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 78px;
-        font-size: 14px;
         
-        /* border-radius: 8px; */
+        font-size: 14px;
     }
 
     div h3 {
@@ -66,7 +66,6 @@ export const TextItem = styled.div`
     }
 
     div a {
-        /* font-size: 1.6rem; */
         cursor: pointer; 
         align-self: flex-start;
     }
@@ -78,11 +77,15 @@ export const TextItem = styled.div`
     }
 
     @media (max-width: 678px) {
-        padding: 50px;
+        margin-top: 60px;
         
         div {
             width: 450px;
             height: 300px;
         }
+    }
+
+    @media (min-width: 1400px) {
+        height: 450px;
     }
 `

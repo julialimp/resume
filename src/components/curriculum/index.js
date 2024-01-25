@@ -20,7 +20,6 @@ const CV = () => {
                 </a>
             </Div>
         </CVSection>
-
     )
 }
 

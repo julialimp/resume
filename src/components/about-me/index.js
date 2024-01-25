@@ -4,8 +4,6 @@ import { getInfos } from "../../services/get-infos"
 import { AboutSection, Container, InfoDiv, Title, Text, Img } from "../../styles/about-me-style"
 import { Overlay } from "../../styles/global-style"
 
-
-
 const AboutMe = () => {
     const [info, setInfo] = useState([])
 

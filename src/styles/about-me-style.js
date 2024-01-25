@@ -63,7 +63,6 @@ export const InfoDiv = styled.div`
 export const Title = styled.h2`
     padding-bottom: 20px;
     text-align: center;
-
 `
 
 export const Text = styled.p`

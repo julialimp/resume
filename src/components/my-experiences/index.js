@@ -6,7 +6,6 @@ import { GlobalStyle, Overlay } from "../../styles/global-style"
 import { chronoTheme } from "./theme"
 import { ExperiencesSection, TimeLineDiv, Title } from "../../styles/my-experiences-style"
 
-
 const MyExperiences = () => {
     const { theme } = useContext(ThemeContext)
     

@@ -121,7 +121,6 @@ export const HomeImg = styled.img`
 
     @media (max-width: 768px) {
        height: 100%;
-
     }
 `
 
@@ -129,5 +128,4 @@ export const Video = styled.video`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
 `

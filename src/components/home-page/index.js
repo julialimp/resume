@@ -7,7 +7,6 @@ import { GlobalStyle, Overlay } from "../../styles/global-style"
 import videoBg from '../../assets/programming.mp4'
 import img from '../../assets/profile-picture.png'
 
-
 const Menu = () => {
     const [menu, setMenu] = useState([])
 

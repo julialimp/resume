@@ -3,7 +3,6 @@ import { ThemeContext } from "../../contexts/theme-context"
 import { getInfos } from "../../services/get-infos"
 import { PortfolioSection, TextItem } from "../../styles/portoflio-style"
 
-
 const MyPorfolio = () => {
     const [projects, setProjects] = useState([])
     const { theme } = useContext(ThemeContext)
