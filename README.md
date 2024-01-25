@@ -36,7 +36,8 @@ In the contact page, each icon/item has an action, either calling, opening whats
 
 ### Links
 
-- Solution URL: [Solution URL - Repository](https://github.com/julialimp/resume)
+- [Solution URL - Repository](https://github.com/julialimp/resume)
+- [Online Page](https://julia-limp-resume.vercel.app/)
 
 
 ## My process
