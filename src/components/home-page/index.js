@@ -26,7 +26,7 @@ const Menu = () => {
             <GlobalStyle theme={theme} />
             <Overlay theme={theme} />
 
-            <Video src={videoBg} autoPlay loop muted />
+            <Video src={videoBg} autoPlay loop muted playsInline />
             <Content>
                 <Title theme={theme}>
                     <Name>Julia</Name>
