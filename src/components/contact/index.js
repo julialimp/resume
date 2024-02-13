@@ -3,7 +3,7 @@ import { ThemeContext } from "../../contexts/theme-context"
 import { useState } from "react"
 import { useEffect } from "react"
 import { getInfos } from "../../services/get-infos"
-import { FaGithub, FaLinkedin, FaMailBulk, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa"
 import { ContactSection, Container, Img, ContactInfo, ContactList } from "../../styles/contact-style"
 import { Overlay } from "../../styles/global-style"
 
@@ -30,7 +30,7 @@ const MyContact = () => {
                     <ContactList theme={theme}>
                         <li><a href={infos.whatsapp} target="_blank" rel="noreferrer"> <FaWhatsapp /> Whatsapp</a></li>
                         <li><a href={infos.phone}><FaPhoneAlt /> Phone</a></li>
-                        <li><a href={infos.email}><FaMailBulk /> Email</a></li>
+                        <li><a href={infos.email}><FaEnvelope /> Email</a></li>
                         <li><a href={infos.linkedin} target="_blank" rel="noreferrer"><FaLinkedin /> Linkedin</a></li>
                         <li><a href={infos.github} target="_blank" rel="noreferrer"><FaGithub /> GitHub </a></li>
                     </ContactList>
