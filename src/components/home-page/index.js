@@ -31,7 +31,7 @@ const Menu = () => {
                 <Title theme={theme}>
                     <Name>Julia</Name>
                     <Lastname>Limp.</Lastname>
-                    <Subtitle>Software Developer</Subtitle>
+                    <Subtitle>Support Engineer</Subtitle>
                 </Title>
                 
                 <DivImg>
