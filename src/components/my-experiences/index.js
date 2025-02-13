@@ -22,7 +22,7 @@ const MyExperiences = () => {
                     mode="VERTICAL_ALTERNATING"
 
                     cardWidth={500}
-                    cardHeight={200}
+                    cardHeight={300}
                     
                     itemWidth={310}
                     nestedCardHeight={150}
