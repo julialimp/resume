@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Document, Page, pdfjs } from "react-pdf"
-import pdfFIle from "../../assets/cv-web-developer.pdf"
+import pdfFIle from "../../assets/support-engineer.pdf"
 import { ThemeContext } from "../../contexts/theme-context"
 import { CVSection, Div } from "../../styles/cv-style"
 

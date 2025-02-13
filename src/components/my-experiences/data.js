@@ -1,5 +1,23 @@
 const items = [
     {
+        title: "2024-present",
+        cardTitle: "HP Inc.",
+        url: "https://www.hp.com",
+        cardSubtitle: "March 2024 - Present",
+        items: [
+            {
+                cardTitle: "Support Engineer II",
+                cardSubtitle: "May 2024 - present",
+                cardDetailedText: "Onboarding lead of SSO Authentication API (OAuth and SAML), coordinating with internal teams to ensure seamless integration; Troubleshooting technical issues, collaborating with product and engineering teams to identify, prioritize, and resolve critical problems, ensuring smooth operation and timely resolution.",
+            },
+            {
+                cardTitle: "Support intern",
+                cardSubtitle: "March 2024",
+                cardDetailedText: "Functions: Act in engineering and software support projects; Technical meetings with teams’ projects; Technological solutions investigation for the software and engineering teams; Management of configuration and tools.",
+            }
+        ]
+    },
+    {
         title: "2019-2023",
         cardTitle: "Poza Cafe",
         url: "https://instagram.com/pozacafe/",
